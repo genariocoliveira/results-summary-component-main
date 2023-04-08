@@ -1,6 +1,6 @@
 console.log('Funcionou')
 
-fetch('../data.json')
+fetch('./data.json')
   .then(response => response.json())
   .then(data => {
     // aqui você pode acessar os objetos do array JSON
@@ -13,7 +13,6 @@ fetch('../data.json')
     // aqui você pode acessar as propriedades de cada objeto e exibir na página HTML
     document.getElementById('nome1').textContent = objeto1.category;
     document.getElementById('score1').textContent = objeto1.score;
-    
 
     document.getElementById('nome2').textContent = objeto2.category;
     document.getElementById('score2').textContent = objeto2.score;
